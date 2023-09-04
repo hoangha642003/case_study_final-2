@@ -9,29 +9,107 @@
 .header_navbar {
   top: 0;
   width: 2000px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  box-shadow: 0 0 10px 5px rgb(112, 112, 112);
 }
 
 .navbar-nav {
-  padding-left: 40%;
+  padding-left: 45%;
+}
+.navbar-nav li {
+  width: 170px;
 }
 
+.nav-img {
+  background-image: url(/photos/1.jpg);
+  width: 2015px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-link {
+  transition: all 0.6s ease;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: red;
+  transition: all 0.6s ease;
+}
 .nav-item {
-  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  transition: all 1s ease;
+}
+.nav-item:hover .drop-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: all 0.8s ease;
 }
 .nav-link {
   color: white;
 }
-.nav-items {
-  text-decoration: none;
-}
 
 .drop li {
-  text-decoration: none;
   list-style: none;
 }
+.drop-menu {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: -15px;
+  padding: 0;
+  top: 48px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: all;
+  transition: all 0.8s ease;
+}
+.drop-menu li {
+  padding: 5px;
+}
+.drop-item {
+  color: black;
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.6s ease;
+}
+.drop-item:hover {
+  color: red;
+  transition: all 0.6s ease;
+}
+.drop-level {
+  position: relative;
+}
+.drop-level:hover .drop-menu-item {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: all 0.8s ease;
+}
+.drop-menu-item {
+  background-color: rgb(245, 245, 245);
+  position: absolute;
+  top: 50%;
+  right: -150px;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: all;
+  transition: all 0.8s ease;
+}
+.drop-items {
+  text-decoration: none;
+  color: black;
+  transition: all 0.6s ease;
+}
+.drop-items:hover {
+  color: red;
+  transition: all 0.6s ease;
+}
 
+.banner_area {
+  padding-left: 22%;
+}
 .banner_photo {
   position: relative;
   width: 4000px;
@@ -42,11 +120,17 @@
   background-size: cover;
 }
 .banner_text {
-  color: red;
+  color: white;
+  position: absolute;
+  top: 40%;
+}
+.banner_text h1 {
+  font-size: 60px;
+  font-weight: 700;
 }
 .banner_logo {
   position: absolute;
-  top: 10%;
+  top: 8%;
   z-index: 2;
 }
 

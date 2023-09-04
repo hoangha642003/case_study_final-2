@@ -1,6 +1,18 @@
-// li{
-//     list-style: none;
-//   }
+@mixin text_transition{
+    opacity:0;
+    visibility:hidden;
+    pointer-events: all;
+    transition:all 0.8s ease;
+}
+@mixin text_transition-hover{
+    opacity:1;
+    visibility:visible;
+    pointer-events: all;
+    transition:all 0.8s ease;
+}
+@mixin text{
+    transition:all 0.6s ease;
+}
 .header{
     position:fixed;
     top:0;
@@ -15,33 +27,102 @@
         // opacity:0.3;
         // top: 90px;
         // left:36%;
-        border-top:1px solid white;
-        border-bottom:1px solid white;
+        // border-top:1px solid white;
+        // border-bottom:1px solid white;
+        box-shadow: 0 0 10px 5px rgb(112, 112, 112);
     }
 }
 .navbar{
     &-nav{
-        padding-left:40%;
+        padding-left:45%;
+        & li{
+            width:170px;
+        }
     }
 }
 .nav{
+    &-img{
+        background-image:url(/photos/1.jpg);
+        width:2015px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-link{
+        @include text;
+        font-weight: 500;
+        &:hover{
+            color:red;
+            @include text;
+        }
+    }
     &-item{
-        padding-left:0;
+        padding-right:0;
+        position:relative;
+        transition:all 1s ease;
+        &:hover .drop-menu{
+            @include text_transition-hover;
+        }
     }
     &-link{
         color:white;
     }
-    &-items{
-        text-decoration: none;
-    }
 }
 .drop{
     & li{
-        text-decoration: none;
         list-style: none;
+    }
+    &-menu{
+        background-color: rgb(255, 255, 255);
+        position:absolute;
+        left:-15px;
+        padding:0;
+        top:48px;
+        @include text-transition;
+        & li{
+            padding:5px;
+            // border:1px solid black;
+        }
+    }
+    &-item{
+        color:black;
+        text-decoration: none;
+        padding-left:15px;
+        font-size:14px;
+        font-weight: 500;
+        @include text;
+        &:hover{
+            color:red;
+            @include text;
+        }
+    }
+    &-level{
+        position:relative;
+        &:hover .drop-menu-item{
+            @include text_transition-hover;
+        }
+    }
+    &-menu-item{
+        background-color: rgb(245, 245, 245);
+        position:absolute;
+        top:50%;
+        right:-150px;
+        z-index:5;
+        @include text_transition;
+    }
+    &-items{
+        text-decoration: none;
+        color:black;
+        @include text;
+        &:hover{
+            color:red;
+            @include text;
+        }
     }
 }
 .banner{
+    &_area{
+        padding-left:22%;
+    }
     &_photo{
         position:relative;
         width:4000px;
@@ -52,11 +133,18 @@
         background-size: cover;
     }
     &_text{
-        color:red;
+        // background-color: aqua;
+        color:white;
+        position:absolute;
+        top:40%;
+        & h1{
+            font-size:60px;
+            font-weight:700;
+        }
     }
     &_logo{
         position:absolute;
-        top:10%;
+        top:8%;
         z-index: 2;
     }
 }
