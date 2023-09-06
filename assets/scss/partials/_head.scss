@@ -133,6 +133,7 @@
         background-size: cover;
     }
     &_text{
+        max-width:500px;
         // background-color: aqua;
         color:white;
         position:absolute;
@@ -144,7 +145,23 @@
     }
     &_logo{
         position:absolute;
-        top:8%;
+        top:12%;
         z-index: 2;
+    }
+    &_button{
+        padding-top:30px;
+    }
+    & a{
+        color:white;
+        background-color: rgb(255, 45, 45);
+        padding:15px 40px;
+        font-weight: 600;
+        font-size:14px;
+        text-decoration: none;
+        @include text;
+        &:hover {
+            background-color: black;
+            @include text;
+        }
     }
 }

@@ -120,6 +120,7 @@
   background-size: cover;
 }
 .banner_text {
+  max-width: 500px;
   color: white;
   position: absolute;
   top: 40%;
@@ -130,11 +131,73 @@
 }
 .banner_logo {
   position: absolute;
-  top: 8%;
+  top: 12%;
   z-index: 2;
+}
+.banner_button {
+  padding-top: 30px;
+}
+.banner a {
+  color: white;
+  background-color: rgb(255, 45, 45);
+  padding: 15px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.6s ease;
+}
+.banner a:hover {
+  background-color: black;
+  transition: all 0.6s ease;
 }
 
 html, body {
   padding: 0;
   margin: 0;
+}
+
+.about {
+  padding-top: 7%;
+}
+.about_text {
+  max-width: 580px;
+}
+.about_text h1 {
+  font-weight: 500;
+}
+.about_text p {
+  color: grey;
+}
+.about_button {
+  padding-top: 30px;
+}
+.about a {
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(255, 45, 45);
+  padding: 15px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.6s ease;
+}
+.about a:hover {
+  box-shadow: 0 8px 20px rgb(248, 84, 84);
+  transition: all 0.6s ease;
+}
+.about_photo img {
+  max-width: 100%;
+}
+
+.drink {
+  padding-top: 110px;
+  background-color: rgb(247, 247, 250);
+}
+.drink_text {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.drink_text p {
+  color: grey;
 }/*# sourceMappingURL=main.css.map */

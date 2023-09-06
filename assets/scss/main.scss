@@ -7,3 +7,53 @@ html,body{
     padding: 0;
     margin: 0;
 }
+.about{
+    padding-top:7%;
+    // padding-left:10%;
+    // padding-right:15%;
+    &_text{
+        max-width: 580px;
+        // background-color:aqua;
+        & h1{
+            font-weight: 500;
+        }
+        & p{
+            color:grey;
+        }
+    }
+    &_button{
+        padding-top:30px;
+    }
+    & a{
+        color:white;
+        text-transform: uppercase;
+        background-color: rgb(255, 45, 45);
+        padding:15px 40px;
+        font-weight: 600;
+        font-size:14px;
+        text-decoration: none;
+        @include text;
+        &:hover {
+            box-shadow: 0 8px 20px rgb(248, 84, 84) ;
+            @include text;
+        }
+    }
+    &_photo{
+        & img{
+            max-width:100%; 
+        }
+    }
+}
+.drink{
+    padding-top:110px;
+    background-color:rgb(247, 247, 250);
+    &_text{
+        // background-color: aqua;
+        flex-direction: column;
+        align-items:center;
+        padding-bottom:50px;
+        & p{
+            color:grey;
+        }
+    }
+}
