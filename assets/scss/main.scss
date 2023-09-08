@@ -3,12 +3,31 @@
 @import "./partials/variable";
 @import "./partials/head";
 
+@mixin drink{
+    background-color: white;
+    width:fit-content;
+    padding:20px;
+    border-radius:12px;
+}
+@mixin p{
+    font-size: 20px;
+    color:rgb(255, 39, 39);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+    .drink_ul button{
+        padding:10px 15px;
+    }
+}
+
 html,body{
     padding: 0;
     margin: 0;
 }
 .about{
     padding-top:7%;
+    padding-bottom:7%;
     // padding-left:10%;
     // padding-right:15%;
     &_text{
@@ -47,13 +66,95 @@ html,body{
 .drink{
     padding-top:110px;
     background-color:rgb(247, 247, 250);
+    &_ul{
+        justify-content: center;
+        & li{
+            border-right: 1px solid #eff7ff;
+        }
+        & button{
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color:black;
+            background-color: rgb(255, 255, 255) !important;
+            padding:30px 55px;
+            &:hover{
+                color:black;
+            }
+            &:focus{
+                background-color: red !important;
+                color:white;
+            }
+        }
+    }
     &_text{
         // background-color: aqua;
         flex-direction: column;
         align-items:center;
         padding-bottom:50px;
+        & h1{
+            font-weight: 640;
+        }
         & p{
             color:grey;
+        }
+    }
+    &_list{
+        width:9000px;
+        background-color: aqua;
+    }
+    &_1{
+        @include drink;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_2{
+        @include drink;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_3{
+        @include drink;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_4{
+        @include drink;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_5{
+        @include drink;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_6{
+        @include drink;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
         }
     }
 }

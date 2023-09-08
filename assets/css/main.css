@@ -1,156 +1,21 @@
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 3;
-}
-.header_container-fluid {
-  width: 1000px;
-}
-.header_navbar {
-  top: 0;
-  width: 2000px;
-  box-shadow: 0 0 10px 5px rgb(112, 112, 112);
+.header .navbar {
+  position: sticky;
+  padding-bottom: 1%;
 }
 
-.navbar-nav {
-  padding-left: 45%;
-}
-.navbar-nav li {
-  width: 170px;
-}
-
-.nav-img {
+.banner {
   background-image: url(/photos/1.jpg);
-  width: 2015px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.nav-link {
-  transition: all 0.6s ease;
-  font-weight: 500;
-}
-.nav-link:hover {
-  color: red;
-  transition: all 0.6s ease;
-}
-.nav-item {
-  padding-right: 0;
-  position: relative;
-  transition: all 1s ease;
-}
-.nav-item:hover .drop-menu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  transition: all 0.8s ease;
-}
-.nav-link {
-  color: white;
-}
-
-.drop li {
-  list-style: none;
-}
-.drop-menu {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: -15px;
-  padding: 0;
-  top: 48px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: all;
-  transition: all 0.8s ease;
-}
-.drop-menu li {
-  padding: 5px;
-}
-.drop-item {
-  color: black;
-  text-decoration: none;
-  padding-left: 15px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.6s ease;
-}
-.drop-item:hover {
-  color: red;
-  transition: all 0.6s ease;
-}
-.drop-level {
-  position: relative;
-}
-.drop-level:hover .drop-menu-item {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  transition: all 0.8s ease;
-}
-.drop-menu-item {
-  background-color: rgb(245, 245, 245);
-  position: absolute;
-  top: 50%;
-  right: -150px;
-  z-index: 5;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: all;
-  transition: all 0.8s ease;
-}
-.drop-items {
-  text-decoration: none;
-  color: black;
-  transition: all 0.6s ease;
-}
-.drop-items:hover {
-  color: red;
-  transition: all 0.6s ease;
-}
-
-.banner_area {
-  padding-left: 22%;
-}
-.banner_photo {
-  position: relative;
-  width: 4000px;
-  height: 300px;
-  max-width: 2000px;
+  width: 100%;
   height: 945px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.banner_text {
-  max-width: 500px;
-  color: white;
-  position: absolute;
-  top: 40%;
-}
-.banner_text h1 {
-  font-size: 60px;
-  font-weight: 700;
-}
-.banner_logo {
-  position: absolute;
-  top: 12%;
-  z-index: 2;
-}
-.banner_button {
-  padding-top: 30px;
-}
-.banner a {
-  color: white;
-  background-color: rgb(255, 45, 45);
-  padding: 15px 40px;
-  font-weight: 600;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.6s ease;
-}
-.banner a:hover {
-  background-color: black;
-  transition: all 0.6s ease;
-}
 
+@media only screen and (max-width: 768px) {
+  .drink_ul button {
+    padding: 10px 15px;
+  }
+}
 html, body {
   padding: 0;
   margin: 0;
@@ -158,6 +23,7 @@ html, body {
 
 .about {
   padding-top: 7%;
+  padding-bottom: 7%;
 }
 .about_text {
   max-width: 580px;
@@ -193,11 +59,129 @@ html, body {
   padding-top: 110px;
   background-color: rgb(247, 247, 250);
 }
+.drink_ul {
+  justify-content: center;
+}
+.drink_ul li {
+  border-right: 1px solid #eff7ff;
+}
+.drink_ul button {
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  background-color: rgb(255, 255, 255) !important;
+  padding: 30px 55px;
+}
+.drink_ul button:hover {
+  color: black;
+}
+.drink_ul button:focus {
+  background-color: red !important;
+  color: white;
+}
 .drink_text {
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
 }
+.drink_text h1 {
+  font-weight: 640;
+}
 .drink_text p {
   color: grey;
+}
+.drink_list {
+  width: 9000px;
+  background-color: aqua;
+}
+.drink_1 {
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+}
+.drink_1_items {
+  justify-content: space-between;
+}
+.drink_1_items p {
+  font-size: 20px;
+  color: rgb(255, 39, 39);
+  font-weight: bold;
+}
+.drink_2 {
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+}
+.drink_2_items {
+  justify-content: space-between;
+}
+.drink_2_items p {
+  font-size: 20px;
+  color: rgb(255, 39, 39);
+  font-weight: bold;
+}
+.drink_3 {
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+}
+.drink_3_items {
+  justify-content: space-between;
+}
+.drink_3_items p {
+  font-size: 20px;
+  color: rgb(255, 39, 39);
+  font-weight: bold;
+}
+.drink_4 {
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+}
+.drink_4_items {
+  justify-content: space-between;
+}
+.drink_4_items p {
+  font-size: 20px;
+  color: rgb(255, 39, 39);
+  font-weight: bold;
+}
+.drink_5 {
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+}
+.drink_5_items {
+  justify-content: space-between;
+}
+.drink_5_items p {
+  font-size: 20px;
+  color: rgb(255, 39, 39);
+  font-weight: bold;
+}
+.drink_6 {
+  background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+}
+.drink_6_items {
+  justify-content: space-between;
+}
+.drink_6_items p {
+  font-size: 20px;
+  color: rgb(255, 39, 39);
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

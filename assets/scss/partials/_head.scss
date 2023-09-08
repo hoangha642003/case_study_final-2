@@ -14,154 +14,16 @@
     transition:all 0.6s ease;
 }
 .header{
-    position:fixed;
-    top:0;
-    z-index:3;
-    &_container-fluid{
-        width:1000px;
-    }
-    &_navbar{
-        top:0;
-        width:2000px;
-        // background-color: rgb(131, 131, 131);
-        // opacity:0.3;
-        // top: 90px;
-        // left:36%;
-        // border-top:1px solid white;
-        // border-bottom:1px solid white;
-        box-shadow: 0 0 10px 5px rgb(112, 112, 112);
-    }
-}
-.navbar{
-    &-nav{
-        padding-left:45%;
-        & li{
-            width:170px;
-        }
-    }
-}
-.nav{
-    &-img{
-        background-image:url(/photos/1.jpg);
-        width:2015px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    &-link{
-        @include text;
-        font-weight: 500;
-        &:hover{
-            color:red;
-            @include text;
-        }
-    }
-    &-item{
-        padding-right:0;
-        position:relative;
-        transition:all 1s ease;
-        &:hover .drop-menu{
-            @include text_transition-hover;
-        }
-    }
-    &-link{
-        color:white;
-    }
-}
-.drop{
-    & li{
-        list-style: none;
-    }
-    &-menu{
-        background-color: rgb(255, 255, 255);
-        position:absolute;
-        left:-15px;
-        padding:0;
-        top:48px;
-        @include text-transition;
-        & li{
-            padding:5px;
-            // border:1px solid black;
-        }
-    }
-    &-item{
-        color:black;
-        text-decoration: none;
-        padding-left:15px;
-        font-size:14px;
-        font-weight: 500;
-        @include text;
-        &:hover{
-            color:red;
-            @include text;
-        }
-    }
-    &-level{
-        position:relative;
-        &:hover .drop-menu-item{
-            @include text_transition-hover;
-        }
-    }
-    &-menu-item{
-        background-color: rgb(245, 245, 245);
-        position:absolute;
-        top:50%;
-        right:-150px;
-        z-index:5;
-        @include text_transition;
-    }
-    &-items{
-        text-decoration: none;
-        color:black;
-        @include text;
-        &:hover{
-            color:red;
-            @include text;
-        }
+    & .navbar{
+        position:sticky;  
+        // background-color: aquamarine;
+        padding-bottom:1%;
     }
 }
 .banner{
-    &_area{
-        padding-left:22%;
-    }
-    &_photo{
-        position:relative;
-        width:4000px;
-        height:300px;
-        max-width: 2000px;
-        height:max(945px);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    &_text{
-        max-width:500px;
-        // background-color: aqua;
-        color:white;
-        position:absolute;
-        top:40%;
-        & h1{
-            font-size:60px;
-            font-weight:700;
-        }
-    }
-    &_logo{
-        position:absolute;
-        top:12%;
-        z-index: 2;
-    }
-    &_button{
-        padding-top:30px;
-    }
-    & a{
-        color:white;
-        background-color: rgb(255, 45, 45);
-        padding:15px 40px;
-        font-weight: 600;
-        font-size:14px;
-        text-decoration: none;
-        @include text;
-        &:hover {
-            background-color: black;
-            @include text;
-        }
-    }
+    background-image: url(/photos/1.jpg);
+    width:100%;
+    height:945px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
