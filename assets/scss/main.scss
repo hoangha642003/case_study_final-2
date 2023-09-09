@@ -1,122 +1,135 @@
-@import "./front";
-@import "./partials/variable";
-@import "./partials/variable";
-@import "./partials/head";
+// @import "./front";
+// @import "./partials/variable";
+// @import "./partials/variable";
+// @import "./partials/head";
 
-@mixin drink{
-    background-color: white;
-    width:fit-content;
-    padding:4%;
-    border-radius:12px;
-}
-@mixin p{
-    font-size: 20px;
-    color:rgb(255, 39, 39);
-    font-weight: bold;
-}
+// @mixin drink{
+//     background-color: white;
+//     width:fit-content;
+//     padding:4%;
+//     border-radius:12px;
+// }
+// @mixin p{
+//     font-size: 20px;
+//     color:rgb(255, 39, 39);
+//     font-weight: bold;
+// }
 
-@media only screen and (max-width: 768px){
-    .drink_ul button{
-        padding:10px 15px;
-    }
-}
+// @media only screen and (max-width: 768px){
+//     .drink_ul button{
+//         padding:10px 15px;
+//     }
+// }
 
-html,body{
-    padding: 0;
-    margin: 0;
-}
-.about{
-    padding-top:7%;
-    padding-bottom:7%;
-    // padding-left:10%;
-    // padding-right:15%;
-    &_text{
-        max-width: 580px;
-        // background-color:aqua;
-        & h1{
-            font-weight: 500;
-        }
-        & p{
-            color:grey;
-        }
-    }
-    &_button{
-        padding-top:30px;
-    }
-    & a{
-        color:white;
-        text-transform: uppercase;
-        background-color: rgb(255, 45, 45);
-        padding:15px 40px;
-        font-weight: 600;
-        font-size:14px;
-        text-decoration: none;
-        @include text;
-        &:hover {
-            box-shadow: 0 8px 20px rgb(248, 84, 84) ;
-            @include text;
-        }
-    }
-    &_photo{
-        & img{
-            max-width:100%; 
-        }
-    }
-}
-.drink{
-    padding-top:110px;
-    padding-bottom:100px;
-    background-color:rgb(247, 247, 250);
-    &_ul{
-        justify-content: center;
-        padding-bottom: 50px;
-        background-color:beige;
-        & li{
-            border-right: 1px solid #eff7ff;
-            padding:30px 55px;
-            background-color:pink;
-        }
-        & button{
-            border-radius: 10px;
-            font-size: 14px;
-            font-weight: 600;
-            color:black;
-            background-color: rgb(255, 255, 255) !important;
-            &:hover{
-                color:black;
-            }
-            &:focus{
-                background-color: red !important;
-                color:white;
-            }
-        }
-    }
-    &_text{
-        // background-color: aqua;
-        flex-direction: column;
-        align-items:center;
-        padding-bottom:10px;
-        & h1{
-            font-weight: 640;
-        }
-        & p{
-            color:grey;
-        }
-    }
-    &_list{
-        flex-wrap: wrap;
-        justify-content:space-between;
-        grid-template-columns:repeat(2,auto) ;
-        // background-color: aqua;
-    }
-    &_1{
-        @include drink;
-        // background-color: red;
-        &_items{
-            justify-content:space-between;
-            & p{
-                @include p;
-            }
-        }
-    }
-}
+// @media screen and (max-width:567px){
+
+// }
+
+// html,body{
+//     padding: 0;
+//     margin: 0;
+// }
+// .about{
+//     background-color:blueviolet;
+//     padding-top:7%;
+//     padding-bottom:7%;
+//     // padding-left:10%;
+//     // padding-right:15%;
+//     &_text{
+//         max-width: 580px;
+//         // background-color:aqua;
+//         & h1{
+//             font-weight: 500;
+//         }
+//         & p{
+//             color:grey;
+//         }
+//     }
+//     &_button{
+//         padding-top:30px;
+//     }
+//     & a{
+//         color:white;
+//         text-transform: uppercase;
+//         background-color: rgb(255, 45, 45);
+//         padding:15px 40px;
+//         font-weight: 600;
+//         font-size:14px;
+//         text-decoration: none;
+//         @include text;
+//         &:hover {
+//             box-shadow: 0 8px 20px rgb(248, 84, 84) ;
+//             @include text;
+//         }
+//     }
+//     &_photo{
+//         & img{
+//             max-width:100%; 
+//         }
+//     }
+// }
+// .drink{
+//     padding-top:110px;
+//     padding-bottom:100px;
+//     // background-color:rgb(247, 247, 250);
+//     background-color:blue;
+//     &_ul{
+//         justify-content: center;
+//         padding-bottom: 50px;
+//         & li{
+//             border-right: 1px solid #eff7ff;
+//         }
+//         & button{
+//             border-radius: 10px;
+//             font-size: 14px;
+//             font-weight: 600;
+//             color:black;
+//             background-color: rgb(255, 255, 255) !important;
+//             padding:30px 55px;
+//             &:hover{
+//                 color:black;
+//             }
+//             &:focus{
+//                 background-color: red !important;
+//                 color:white;
+//             }
+//         }
+//     }
+//     &_text{
+//         // background-color: aqua;
+//         flex-direction: column;
+//         align-items:center;
+//         // padding-bottom:10px;
+//         & h1{
+//             font-weight: 640;
+//         }
+//         & p{
+//             color:grey;
+//         }
+//     }
+//     &_list{
+//         flex-wrap: wrap;
+//         justify-content:space-between;
+//         grid-template-columns:repeat(2,auto) ;
+//         // background-color: aqua;
+//     }
+//     &_1{
+//         @include drink;
+//         // background-color: red;
+//         &_items{
+//             justify-content:space-between;
+//             & p{
+//                 @include p;
+//             }
+//         }
+//     }
+// }
+// .footer{
+//     background-color:aqua;
+// }
+// .form{
+//     background-color:blueviolet;
+// }
+// .meal{
+//     background-color: pink;
+// }
