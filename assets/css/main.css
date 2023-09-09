@@ -57,10 +57,12 @@ html, body {
 
 .drink {
   padding-top: 110px;
+  padding-bottom: 100px;
   background-color: rgb(247, 247, 250);
 }
 .drink_ul {
   justify-content: center;
+  padding-bottom: 50px;
 }
 .drink_ul li {
   border-right: 1px solid #eff7ff;
@@ -83,7 +85,7 @@ html, body {
 .drink_text {
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 .drink_text h1 {
   font-weight: 640;
@@ -92,14 +94,15 @@ html, body {
   color: grey;
 }
 .drink_list {
-  width: 9000px;
-  background-color: aqua;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, auto);
 }
 .drink_1 {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px;
+  padding: 4%;
   border-radius: 12px;
 }
 .drink_1_items {
@@ -114,7 +117,7 @@ html, body {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px;
+  padding: 4%;
   border-radius: 12px;
 }
 .drink_2_items {
@@ -129,7 +132,7 @@ html, body {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px;
+  padding: 4%;
   border-radius: 12px;
 }
 .drink_3_items {
@@ -144,7 +147,7 @@ html, body {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px;
+  padding: 4%;
   border-radius: 12px;
 }
 .drink_4_items {
@@ -159,7 +162,7 @@ html, body {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px;
+  padding: 4%;
   border-radius: 12px;
 }
 .drink_5_items {
@@ -174,7 +177,7 @@ html, body {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px;
+  padding: 4%;
   border-radius: 12px;
 }
 .drink_6_items {
