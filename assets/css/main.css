@@ -1,5 +1,11 @@
-.header .navbar {
+.html, body {
+  position: relative;
+}
+
+.header {
   position: sticky;
+  z-index: 1000;
+  background-color: aquamarine;
   padding-bottom: 1%;
 }
 
@@ -63,9 +69,12 @@ html, body {
 .drink_ul {
   justify-content: center;
   padding-bottom: 50px;
+  background-color: beige;
 }
 .drink_ul li {
   border-right: 1px solid #eff7ff;
+  padding: 30px 55px;
+  background-color: pink;
 }
 .drink_ul button {
   border-radius: 10px;
@@ -73,7 +82,6 @@ html, body {
   font-weight: 600;
   color: black;
   background-color: rgb(255, 255, 255) !important;
-  padding: 30px 55px;
 }
 .drink_ul button:hover {
   color: black;
@@ -109,81 +117,6 @@ html, body {
   justify-content: space-between;
 }
 .drink_1_items p {
-  font-size: 20px;
-  color: rgb(255, 39, 39);
-  font-weight: bold;
-}
-.drink_2 {
-  background-color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 4%;
-  border-radius: 12px;
-}
-.drink_2_items {
-  justify-content: space-between;
-}
-.drink_2_items p {
-  font-size: 20px;
-  color: rgb(255, 39, 39);
-  font-weight: bold;
-}
-.drink_3 {
-  background-color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 4%;
-  border-radius: 12px;
-}
-.drink_3_items {
-  justify-content: space-between;
-}
-.drink_3_items p {
-  font-size: 20px;
-  color: rgb(255, 39, 39);
-  font-weight: bold;
-}
-.drink_4 {
-  background-color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 4%;
-  border-radius: 12px;
-}
-.drink_4_items {
-  justify-content: space-between;
-}
-.drink_4_items p {
-  font-size: 20px;
-  color: rgb(255, 39, 39);
-  font-weight: bold;
-}
-.drink_5 {
-  background-color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 4%;
-  border-radius: 12px;
-}
-.drink_5_items {
-  justify-content: space-between;
-}
-.drink_5_items p {
-  font-size: 20px;
-  color: rgb(255, 39, 39);
-  font-weight: bold;
-}
-.drink_6 {
-  background-color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 4%;
-  border-radius: 12px;
-}
-.drink_6_items {
-  justify-content: space-between;
-}
-.drink_6_items p {
   font-size: 20px;
   color: rgb(255, 39, 39);
   font-weight: bold;

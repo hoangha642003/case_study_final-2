@@ -14,12 +14,14 @@
     transition:all 0.6s ease;
 }
 
+.html,body{
+    position:relative;
+}
 .header{
-    & .navbar{
-        position:sticky;  
-        // background-color: aquamarine;
-        padding-bottom:1%;
-    }
+    position:sticky; 
+    z-index: 1000;
+    background-color: aquamarine;
+    padding-bottom:1%;
 }
 .banner{
     background-image: url(/photos/1.jpg);

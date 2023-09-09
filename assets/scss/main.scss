@@ -70,8 +70,11 @@ html,body{
     &_ul{
         justify-content: center;
         padding-bottom: 50px;
+        background-color:beige;
         & li{
             border-right: 1px solid #eff7ff;
+            padding:30px 55px;
+            background-color:pink;
         }
         & button{
             border-radius: 10px;
@@ -79,7 +82,6 @@ html,body{
             font-weight: 600;
             color:black;
             background-color: rgb(255, 255, 255) !important;
-            padding:30px 55px;
             &:hover{
                 color:black;
             }
@@ -110,51 +112,6 @@ html,body{
     &_1{
         @include drink;
         // background-color: red;
-        &_items{
-            justify-content:space-between;
-            & p{
-                @include p;
-            }
-        }
-    }
-    &_2{
-        @include drink;
-        &_items{
-            justify-content:space-between;
-            & p{
-                @include p;
-            }
-        }
-    }
-    &_3{
-        @include drink;
-        &_items{
-            justify-content:space-between;
-            & p{
-                @include p;
-            }
-        }
-    }
-    &_4{
-        @include drink;
-        &_items{
-            justify-content:space-between;
-            & p{
-                @include p;
-            }
-        }
-    }
-    &_5{
-        @include drink;
-        &_items{
-            justify-content:space-between;
-            & p{
-                @include p;
-            }
-        }
-    }
-    &_6{
-        @include drink;
         &_items{
             justify-content:space-between;
             & p{
