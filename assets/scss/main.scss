@@ -1,135 +1,279 @@
-// @import "./front";
-// @import "./partials/variable";
-// @import "./partials/variable";
-// @import "./partials/head";
+@import "./front";
+@import "./partials/variable";
+@import "./partials/variable";
+@import "./partials/head";
 
-// @mixin drink{
-//     background-color: white;
-//     width:fit-content;
-//     padding:4%;
-//     border-radius:12px;
-// }
-// @mixin p{
-//     font-size: 20px;
-//     color:rgb(255, 39, 39);
-//     font-weight: bold;
-// }
+@mixin drink{
+    background-color: white;
+    width:fit-content;
+    padding:4%;
+    border-radius:12px;
+}
+@mixin p{
+    font-size: 20px;
+    color:rgb(255, 39, 39);
+    font-weight: bold;
+}
 
-// @media only screen and (max-width: 768px){
-//     .drink_ul button{
-//         padding:10px 15px;
-//     }
-// }
+@media only screen and (min-device-width: 768px)  and (max-device-width : 1024px){
+    .drink_ul button{
+        padding:10px 15px;
+    }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    /* STYLES HERE */
+}
+@media only screen and (max-device-width : 480px) {
+    /* Styles */
+    }
 
-// @media screen and (max-width:567px){
+html,body{
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+.row{
+    --bs-gutter-x: 0rem;
+}
 
-// }
 
-// html,body{
-//     padding: 0;
-//     margin: 0;
-// }
-// .about{
-//     background-color:blueviolet;
-//     padding-top:7%;
-//     padding-bottom:7%;
-//     // padding-left:10%;
-//     // padding-right:15%;
-//     &_text{
-//         max-width: 580px;
-//         // background-color:aqua;
-//         & h1{
-//             font-weight: 500;
-//         }
-//         & p{
-//             color:grey;
-//         }
-//     }
-//     &_button{
-//         padding-top:30px;
-//     }
-//     & a{
-//         color:white;
-//         text-transform: uppercase;
-//         background-color: rgb(255, 45, 45);
-//         padding:15px 40px;
-//         font-weight: 600;
-//         font-size:14px;
-//         text-decoration: none;
-//         @include text;
-//         &:hover {
-//             box-shadow: 0 8px 20px rgb(248, 84, 84) ;
-//             @include text;
-//         }
-//     }
-//     &_photo{
-//         & img{
-//             max-width:100%; 
-//         }
-//     }
-// }
-// .drink{
-//     padding-top:110px;
-//     padding-bottom:100px;
-//     // background-color:rgb(247, 247, 250);
-//     background-color:blue;
-//     &_ul{
-//         justify-content: center;
-//         padding-bottom: 50px;
-//         & li{
-//             border-right: 1px solid #eff7ff;
-//         }
-//         & button{
-//             border-radius: 10px;
-//             font-size: 14px;
-//             font-weight: 600;
-//             color:black;
-//             background-color: rgb(255, 255, 255) !important;
-//             padding:30px 55px;
-//             &:hover{
-//                 color:black;
-//             }
-//             &:focus{
-//                 background-color: red !important;
-//                 color:white;
-//             }
-//         }
-//     }
-//     &_text{
-//         // background-color: aqua;
-//         flex-direction: column;
-//         align-items:center;
-//         // padding-bottom:10px;
-//         & h1{
-//             font-weight: 640;
-//         }
-//         & p{
-//             color:grey;
-//         }
-//     }
-//     &_list{
-//         flex-wrap: wrap;
-//         justify-content:space-between;
-//         grid-template-columns:repeat(2,auto) ;
-//         // background-color: aqua;
-//     }
-//     &_1{
-//         @include drink;
-//         // background-color: red;
-//         &_items{
-//             justify-content:space-between;
-//             & p{
-//                 @include p;
-//             }
-//         }
-//     }
-// }
-// .footer{
-//     background-color:aqua;
-// }
-// .form{
-//     background-color:blueviolet;
-// }
-// .meal{
-//     background-color: pink;
-// }
+.about{
+    // background-color:blueviolet;
+    padding-top:7%;
+    padding-bottom:7%;
+    // padding-left:10%;
+    // padding-right:15%;
+    &_text{
+        max-width: 580px;
+        // background-color:aqua;
+        & h1{
+            font-weight: 500;
+        }
+        & p{
+            color:grey;
+        }
+    }
+    &_button{
+        padding-top:30px;
+    }
+    & a{
+        color:white;
+        text-transform: uppercase;
+        background-color: rgb(255, 45, 45);
+        padding:15px 40px;
+        font-weight: 600;
+        font-size:14px;
+        text-decoration: none;
+        @include text;
+        &:hover {
+            box-shadow: 0 8px 20px rgb(248, 84, 84) ;
+            @include text;
+        }
+    }
+    &_photo{
+        & img{
+            max-width:100%; 
+        }
+    }
+}
+
+
+.drink{
+    padding-top:110px;
+    padding-bottom:100px;
+    background-color:rgb(247, 247, 250);
+    // background-color:blue;
+    &_ul{
+        justify-content: center;
+        padding-bottom: 50px;
+        & li{
+            border-right: 1px solid #eff7ff;
+        }
+        & button{
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color:black;
+            background-color: rgb(255, 255, 255) !important;
+            padding:30px 55px;
+            &:hover{
+                color:black;
+            }
+            &:focus{
+                background-color: red !important;
+                color:white;
+            }
+        }
+    }
+    &_text{
+        // background-color: aqua;
+        flex-direction: column;
+        align-items:center;
+        // padding-bottom:10px;
+        & h1{
+            font-size: 36;
+            font-weight: 640;
+        }
+        & p{
+            color:grey;
+        }
+    }
+    &_list{
+        flex-wrap: wrap;
+        justify-content:space-between;
+        grid-template-columns:repeat(2,auto);
+        // background-color: aqua;
+    }
+    &_1{
+        @include drink;
+        // background-color: red;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_2{
+        @include drink;
+        // background-color: red;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_3{
+        @include drink;
+        // background-color: red;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_4{
+        @include drink;
+        // background-color: red;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_5{
+        @include drink;
+        // background-color: red;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+    &_6{
+        @include drink;
+        // background-color: red;
+        &_items{
+            justify-content:space-between;
+            & p{
+                @include p;
+            }
+        }
+    }
+}
+
+
+.form{
+    // background-color:blueviolet;
+    background: url("https://preview.colorlib.com/theme/marco/img/reservation-bg.jpg.webp");
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:80px 0px;
+    position:relative;
+    &::after{
+        position:absolute;
+        content:"";
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        background: #000000c2;
+        z-index:2;
+    }
+    &_items{
+        // background-color:blueviolet;
+        flex-wrap:wrap;
+        // top:50px;
+    }
+    &_text{
+        z-index: 20;
+        // background-color: aqua;
+        color:white;
+        padding-left:30px;
+        padding-right:30px;
+        & h2{
+            font-size: 40px;
+        }
+    }
+    &_board{
+        position:relative;
+        z-index: 20;
+        // background-color: rgb(172, 32, 32);
+        padding-left:200px;
+        & input{
+            width:300px;
+        }
+        &-1{
+            padding:100px 80px;
+        }
+    }
+    &_btn{
+        padding-top:40px;
+        margin-left:100px;
+        & a{
+            background-color: rgb(255, 45, 45);
+            color:white;
+            text-decoration: none;
+            font-weight: 600;
+            @include text;
+            &:hover {
+                box-shadow: 0 8px 20px rgb(248, 84, 84) ;
+                @include text;
+            }
+        }
+    }
+}
+
+.meal{
+    padding-top:7%;
+    &_text{
+        & h2{
+            font-size: 40px;
+            font-weight:600;
+        }
+        & p{
+            color:grey;
+        }
+    }
+}
+
+
+.slide{
+    &_img{
+        & img{
+            max-width:100%;
+        }
+    }
+}
+.footer{
+    background-color: ;
+    padding:7% 0;
+    & p,h3,h2{
+        color:white;
+    }
+}
